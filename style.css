@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body {
+    background: #DAE8F5;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+  body div {
+    width: 50%;
+    height: 100%;
+  }
+  
+  div#left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div#left main {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap: 50px;
+  }
+  div#left main h1 {
+    word-spacing: -30px;
+    font-size: 3em;
+    color: #3A4B9B;
+  }
+  div#left main h1 mark {
+    background: none;
+    color: #F16101;
+  }
+  div#left main p {
+    line-height: 2em;
+  }
+  div#left main div#timer {
+    width: auto;
+    height: 106px;
+    display: flex;
+    gap: 20px;
+  }
+  div#left main div#timer div.block {
+    border-radius: 5px;
+    width: 106px;
+    background: #3A4B9B;
+    font-size: 48px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    line-height: 200%;
+  }
+  div#left main div#timer div.principal-block {
+    text-align: center;
+    color: #3A4B9B;
+  }
+  
+  div#right {
+    background: url(assets/predio.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  button {
+    text-transform: uppercase;
+    color: white;
+    width: 249px;
+    height: 44px;
+    background: #F16101;
+    border-radius: 77px;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+
+  #button-one{
+    display: block;
+    }
+    #button-two{
+    display: none;
+    }
+
+@media only screen and (max-width: 1000px) {
+    #button-one{
+        display: none;
+    }
+    #button-two{
+        display: block;
+    }
+    body{
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        overflow-x: hidden;
+    }
+    body > div{
+        width: 100vw;
+        height: 100vh;
+    }
+    body main{
+        width: 100%;
+        height: auto;
+    }
+    body div#timer{
+        flex-direction: column;
+    }
+    .principal-block{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: left;
+    }
+}
